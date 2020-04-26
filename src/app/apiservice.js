@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const httpClient = axios.create({
-    baseURL: 'https://qualityspeed-api.herokuapp.com/'
+    baseURL: 'https://qualityspeed-api.herokuapp.com'
 })
 
 class ApiService {
@@ -16,18 +16,18 @@ class ApiService {
     }
 
     put(url, objeto){
-        const requestUrl = `${this.apiurl}${url}`;
+        const requestUrl = `${this.apiurl}${url}`
         return httpClient.put(requestUrl, objeto);
     }
 
     delete(url){
-        const requestUrl = `${this.apiurl}${url}`;
-        return httpClient.delete(requestUrl);
+        const requestUrl = `${this.apiurl}${url}`
+        return httpClient.delete(requestUrl)
     }
 
     get(url){
-        const requestUrl = `${this.apiurl}${url}`;
-        return httpClient.get(requestUrl);
+        const requestUrl = `${this.apiurl}${url}`
+        return httpClient.get(requestUrl)
     }
 }
 
