@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const httpClient = axios.create({
-    baseURL: 'https://qualityspeed-api.herokuapp.com'
+    baseURL: 'https://qualityspeed-api.herokuapp.com/'
 })
 
 class ApiService {
